@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="366.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller.ReportController">
+   <children>
+      <TableView fx:id="table" prefHeight="258.0" prefWidth="547.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="PID" />
+          <TableColumn prefWidth="75.0" text="Arrival" />
+            <TableColumn prefWidth="75.0" text="Duration" />
+            <TableColumn prefWidth="75.0" text="Wait" />
+            <TableColumn prefWidth="75.0" text="Finish" />
+            <TableColumn prefWidth="114.0" text="TurnAround" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="wait2" editable="false" labelFloat="true" layoutX="74.0" layoutY="278.0" promptText="Avg Wait" />
+      <JFXTextField fx:id="turnaround2" editable="false" labelFloat="true" layoutX="293.0" layoutY="278.0" promptText="Avg TurnAround" />
+   </children>
+</AnchorPane>
